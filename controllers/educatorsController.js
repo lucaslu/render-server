@@ -1,5 +1,6 @@
 const { v4: uuidv4 } = require("uuid");
-const knex = require("knex")(require("../knexfile"));
+const env = process.env.NODE_ENV || "development";
+const knex = require("knex")(require("../knexfile")[env]);
 
 const findAll = (_req, res) => {
   knex("educators")
@@ -16,7 +17,7 @@ const findOne = (req, res) => {
     .where({ id: req.params.id })
     .then((data) => {
       if (data.length === 0) {
-         res
+        res
           .status(404)
           .send(`Error retrieving educator with ID: ${req.params.id} `);
       }

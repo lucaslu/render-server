@@ -1,5 +1,6 @@
 const { v4: uuidv4 } = require("uuid");
-const knex = require("knex")(require("../knexfile"));
+const env = process.env.NODE_ENV || "development";
+const knex = require("knex")(require("../knexfile")[env]);
 
 const findAll = (_req, res) => {
   knex("students")

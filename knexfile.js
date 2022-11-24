@@ -1,5 +1,4 @@
 // Update with your config settings.
-const path = require("node:path");
 require("dotenv").config();
 /**
  * @type { Object.<string, import("knex").Knex.Config> }
