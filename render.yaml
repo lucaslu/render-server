@@ -7,6 +7,7 @@ services:
       yarn run migrate:down &&
       yarn run migrate &&
       yarn run seed
+    startCommand: node index.js
     envVars:
       - key: NODE_ENV
         value: production
