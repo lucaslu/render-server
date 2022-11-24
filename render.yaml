@@ -3,7 +3,7 @@ services:
     name: brainstation-api
     env: node
     plan: free
-    buildCommand: yarn --frozen-lockfile --prod=false &&
+    buildCommand: yarn &&
       yarn run migrate:down &&
       yarn run migrate &&
       yarn run seed
