@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: render-db-demo
+    name: brainstation-api
     env: node
     plan: free
     buildCommand: yarn --frozen-lockfile --prod=false &&
@@ -12,8 +12,4 @@ services:
       - key: NODE_ENV
         value: production
       - key: DATABASE_URL
-        value: postgres://root:PnjNXqwFck5boIeF1jGRDdeyCqBao3no@dpg-cdvu9e9a6gdsa67vc870-a.oregon-postgres.render.com/brainstation?ssl=true
-
-databases:
-  - name: brainstation
-    plan: free
+        value: postgres://brainstation_d4rk_user:2yncLOgX6v0TSUDH7kH4FACPHRLd8xSL@dpg-cdvv2tg2i3mkucbqunc0-a.oregon-postgres.render.com/brainstation_d4rk?ssl=true
