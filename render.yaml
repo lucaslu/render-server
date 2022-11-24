@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: brainstationapp
+    name: render-db-demo
     env: node
     plan: free
     buildCommand: yarn --frozen-lockfile --prod=false &&
