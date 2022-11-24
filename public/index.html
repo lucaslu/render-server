@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>API Documentation</h1>
+    <h3>Educators API End Points</h3>
+    <ul>
+      <li>GET all Educators - /api/educators</li>
+      <li>GET one Educator Details - /api/educators/:educatorId</li>
+      <li>
+        POST a new Educator - /api/educators. Post Object Structure
+        <p>
+          {name: educator-name, email: educator-email, position:
+          educator-position}
+        </p>
+      </li>
+      <li>Update an Educator - /api/educators/:educatorId</li>
+      <li>Delete an Educator - /api/educators/:educatorId</li>
+    </ul>
+    <h3>Students API End Points</h3>
+    <ul>
+      <li>GET all Students - /api/students</li>
+      <li>GET one Student Details - /api/students/:studentId</li>
+      <li>
+        POST a new Student - /api/students. Post Object Structure
+        <p>
+          {name: student-name, email: student-email, course: student-course,
+          educator_id: existing-educator-id}
+        </p>
+      </li>
+      <li>Update an Student - /api/students/:studentId</li>
+      <li>Delete an Student - /api/students/:studentId</li>
+    </ul>
+  </body>
+</html>
