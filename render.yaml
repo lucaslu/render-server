@@ -8,8 +8,3 @@ services:
       yarn run migrate &&
       yarn run seed
     startCommand: node index.js
-    envVars:
-      - key: NODE_ENV
-        value: production
-      - key: DB_CONNECTION_STRING
-        value: postgres://brainstation_d4rk_user:2yncLOgX6v0TSUDH7kH4FACPHRLd8xSL@dpg-cdvv2tg2i3mkucbqunc0-a.oregon-postgres.render.com/brainstation_d4rk?ssl=true
